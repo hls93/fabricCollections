@@ -1,7 +1,7 @@
-<h1>List Collection</h1>
+<h1 class="list">List Collection</h1>
 
 
-<table border="1">
+<table border="1" class = "table">
   <tr>
     <th>
       Type
@@ -21,7 +21,7 @@
   <tr>
     <td><a href="/fabricForm?id={{_id}}">{{typeOf}}</a></td>
     <td>{{yards}}</td>
-    <td>{{description}}</td>
+    <td>{{description.color}}, {{description.sparkly}}</td>
     <td>{{purchased}}</td>
     <td><a href="/deleteFabric/?id={{_id}}">Delete</a></td>
   </tr>

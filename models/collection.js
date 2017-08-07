@@ -7,10 +7,10 @@ const Schema = mongoose.Schema;
 const collectionSchema = new Schema({
   typeOf: { type: String, required: true },
   yards: { type: Number, required: true },
-  description: [{
+  description: {
     color: String,
     sparkly: Boolean
-  }],
+  },
   purchased: {type: String}
 });
 

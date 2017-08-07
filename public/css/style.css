@@ -1,9 +1,26 @@
 .form{
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
 }
 
 body{
-  background: misty rose;
+  color: dark grey;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #BC8F8F;
+}
+
+.table{
+  border: solid #A52A2A;
+  background: pink;
+  width: 700px;
+  height: 300px;
+}
+
+.list{
+  text-align: center;
 }
