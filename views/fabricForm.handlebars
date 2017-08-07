@@ -2,17 +2,18 @@
 
 <form action="/addFabric" method="post" class="form">
   <label for="typeOf">Type</label>
-  <input type="text" id="typeOf" name="typeOf" value="{{collection.typeOf}}" />
+  <input type="text" id="typeOf" name="typeOf" value="{{collections.typeOf}}" />
   <div class="fieldError">{{errors.typeOf.message}}</div>
   <br />
 
   <label for="yards">Yards</label>
-  <input type="text" id="yards" name="yards" value="{{collection.yards}}" />
+  <input type="text" id="yards" name="yards" value="{{collections.yards}}" />
   <div class="fieldError">{{errors.yards.message}}</div>
   <br />
 
-  <label for="description">Description</label>
-  <input type="text" id="description" name="description" value="{{collection.description}}" />
+  <label for="description">Description (color?, sparkly?)</label>
+  <input type="text" id="descriptionColor" name="description" value="{{collections.description.color}}" />
+  <input type="text" id="descriptionSparkly" name="description" value="{{collections.description.sparkly}}" />
   <br />
 
   <label for="purchased">Store Purchased</label>
@@ -20,8 +21,8 @@
   <br />
 
 
-  {{#if collection._id}}
-    <input type="hidden" name="id" value="{{collection._id}}" />
+  {{#if collections._id}}
+    <input type="hidden" name="id" value="{{collections._id}}" />
   {{/if}}
 
   <button class="button-primary">Save Fabric</button>

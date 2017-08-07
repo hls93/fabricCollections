@@ -7,13 +7,13 @@ const Schema = mongoose.Schema;
 const collectionSchema = new Schema({
   typeOf: { type: String, required: true },
   yards: { type: Number, required: true },
-  description: {
+  description: [{
     color: String,
-    sparkly: Boolean,
-    patterned: Boolean
-  },
-  purchased: ['Joann', 'Michaels', 'AC Moore', 'Etsy']
+    sparkly: Boolean
+  }],
+  purchased: {type: String}
 });
+
 
 // create a model for a Contact
 const Collection = mongoose.model('Collection', collectionSchema);
