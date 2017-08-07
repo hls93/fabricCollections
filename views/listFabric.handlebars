@@ -1,0 +1,30 @@
+<h1>List Collection</h1>
+
+
+<table border="1">
+  <tr>
+    <th>
+      Type
+    </th>
+    <th>
+      Yards
+    </th>
+    <th>
+      description
+    </th>
+    <th>
+      Store Purchased
+    </th>
+    <th></th>
+  </tr>
+  {{#collection}}
+  <tr>
+    <td><a href="/fabricForm?id={{_id}}">{{typeOf}}</a></td>
+    <td>{{yards}}</td>
+    <td>{{description}}</td>
+    <td>{{purchased}}</td>
+    <td><a href="/deleteFabric/?id={{_id}}">Delete</a></td>
+  </tr>
+  {{/collection}}
+
+</table>

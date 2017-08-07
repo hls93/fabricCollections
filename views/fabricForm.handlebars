@@ -1,0 +1,28 @@
+<h1>Add a Fabric</h1>
+
+<form action="/addFabric" method="post" class="form">
+  <label for="typeOf">Type</label>
+  <input type="text" id="typeOf" name="typeOf" value="{{collection.typeOf}}" />
+  <div class="fieldError">{{errors.typeOf.message}}</div>
+  <br />
+
+  <label for="yards">Yards</label>
+  <input type="text" id="yards" name="yards" value="{{collection.yards}}" />
+  <div class="fieldError">{{errors.yards.message}}</div>
+  <br />
+
+  <label for="description">Description</label>
+  <input type="text" id="description" name="description" value="{{collection.description}}" />
+  <br />
+
+  <label for="purchased">Store Purchased</label>
+  <input type="text" id="purchased" name="purchased" value="{{collections.purchased}}" />
+  <br />
+
+
+  {{#if collection._id}}
+    <input type="hidden" name="id" value="{{collection._id}}" />
+  {{/if}}
+
+  <button class="button-primary">Save Fabric</button>
+</form>
